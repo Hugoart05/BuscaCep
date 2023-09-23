@@ -15,6 +15,7 @@ const Search = {
     setEvents(){
         this.inputcep.addEventListener('keyup',async (e)=>{
             e.preventDefault()
+            contentbody.innerHTML = ''
             const {value} = e.target
             if(value == '' && contentbody.classList.contains('showbodyinfo')){
                 contentbody.innerHTML = ''
