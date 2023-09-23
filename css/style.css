@@ -1,0 +1,108 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
+*{
+    margin: 0px;
+    border: 0px;
+}
+
+
+.container-fluid{
+    height: 100vh!important;
+    background-image: url('https://t2.tudocdn.net/635668?w=1920');
+    background-size: cover;
+    background-position: right ;
+}
+
+.mensagemdanger{
+    position: absolute;
+    top:200px;
+    width: 349px;
+    height: 45px;
+    border: 1px solid rgba(255, 255, 0, 0.116);
+    border-radius: 10px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(90, 90, 252);
+    transition: 0.5s ease;
+    >p{
+        color: white;
+        margin: 0px;
+    }
+   
+}
+
+.formulario-cep{
+    width: 349px;
+    height: 380px;
+    border: 1px solid rgba(255, 255, 0, 0.13);
+    border-radius: 10px;
+    background-color: rgba(0, 0, 255, 0.109);
+    backdrop-filter: blur(10px);
+}
+
+.title{
+    width: 100%;
+    height:60px;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.search-container{
+    width: 100%;
+    padding-bottom: 10px;
+    
+   
+}
+
+.search{
+    display: flex;
+    gap: 10px;
+}
+
+.search i{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+.search input{
+    background-color: transparent;
+    border: none!important;
+    outline: none!important;
+}
+
+.search::before{
+    content: '';
+    border-bottom:  2px solid rgb(100, 95, 255);
+    width:45px ;
+    position: absolute;
+    top: 145px;
+    transition: 0.5s ease;
+}
+
+.search:hover{
+    &::before{
+        width: 240px;
+    }
+}
+
+.info{
+    width: 0px;
+    height: 0px;
+    transition:0.2s ease;
+}
+
+
+.showbodyinfo{
+    width: 85%;
+    height: 200px;
+    top: 160px;
+    border-radius: 10px;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.141);
+    padding: 20px;
+}
+
