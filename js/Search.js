@@ -14,6 +14,7 @@ const Search = {
     },
     setEvents(){
         this.inputcep.addEventListener('keyup',async (e)=>{
+            e.preventDefault()
             const {value} = e.target
             if(value == '' && contentbody.classList.contains('showbodyinfo')){
                 contentbody.innerHTML = ''
@@ -32,7 +33,7 @@ const Search = {
                         contentbody.appendChild(cepInfo)
                         contentbody.appendChild(localidadeInfo)
                     }else{
-                        contentbody.innerHTML = 'Cep nao encontrado'
+                        contentbody.innerHTML = 'nao encontrado'
                     }
                     
                 }
