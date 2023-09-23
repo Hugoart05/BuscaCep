@@ -32,7 +32,7 @@ const Search = {
                         contentbody.appendChild(cepInfo)
                         contentbody.appendChild(localidadeInfo)
                     }else{
-                        contentbody.innerHTML = 'cep nao'
+                        contentbody.innerHTML = 'Cep nao encontrado'
                     }
                     
                 }
