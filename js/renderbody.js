@@ -39,7 +39,3 @@ const render ={
 
 export default render
 
-{/* <label for="" class="d-flex">
-                    <i class="bi bi-geo-alt-fill"></i>
-                    <p>Jardim alegria</p>
-                </label> */}
